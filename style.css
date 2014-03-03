@@ -1,0 +1,104 @@
+﻿			* {
+				font-family: Colibri, Lucida Sans, Arial, Helvetica, sans-serif;
+			}
+			body {
+				display: block;
+				background: url(images/background.jpg) repeat;
+				margin: 0em auto;
+			}
+			header {
+				display: block;
+				width: 800px;
+				background:#00aa13;
+				border-color: #006600;
+				border-style: groove;
+				border-width: 12px;
+				border-radius: 42px 42px 10px 10px;
+				text-align: center;
+				position: relative;
+				margin: auto;
+				
+			}
+			nav {
+				display: block;
+				width: 800px;
+				margin: auto;
+				
+			}
+			nav ul {
+				list-style: none;
+				padding: 0px;
+				display: block;
+				clear: right;
+				background-color: #139913;
+				padding-left: 4px;
+				height: 24px;
+			}
+			nav ul li {
+				display: inline;
+				padding: 0px 20px 5px 10px;
+				height: 24px;
+				border-right: 1px solid #ccc;
+			}
+			nav ul li a {
+				color: #000;
+				text-decoration: none;
+				font-size: 13px;
+				font-weight: bold;
+			}
+			nav ul li a:hover {
+				color: #fff;
+			}
+			aside {
+				display: block;
+				float: right;
+				width: 280px;
+				background: #aaaaaa;
+				padding-left: 20px;
+				padding-right: 20px;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				border-radius: 5px;
+			}
+			article{
+				display: block;
+				width: 800px;
+				margin: auto;
+				border-color: #006600;
+				border-style: solid;
+				background-color: #fdfdfd;
+				border-width: 3px;
+				padding: 5px;
+			}
+			p {
+				color:  #000000;
+			}
+			figure {
+				background: #006613; 
+				/*padding: 5px;*/
+				display: block; 
+				width: 150px; 
+				float: left; 
+				margin: 0 5px 5px 0;
+				text-align: center;
+				border-radius: 6px;
+			}
+			figcaption {
+				color: #fff;
+				padding-bottom: 5px;
+			}
+			footer {
+				display: block;
+				width: 800px;
+				background:#00aa13;
+				border-color: #006600;
+				border-style: groove;
+				border-width: 12px;
+				border-radius: 6px 6px 42px 42px;
+				text-align: center;
+				position: relative;
+				margin: auto;
+			}
+			a {
+				color: #006613;
+			}
