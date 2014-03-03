@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="description" content="HJ-S's blog - рассказы">
+		<meta name="Keywords" content="hj-s, рассказы, Тёмная комната, Аллея веры"> 
+		<title>Обратная связь</title>
+		<link rel="stylesheet" href="style.css" />
+		<style>
+			 #send .label {
+				width: 150px; /* Ширина блока с текстом */
+				float: left; /* Расположение в одну строку с полем */
+				text-align: right; /* Выравнивание по правому краю */
+			 }
+			 #send .form-text {
+				width: 240px; /* Ширина поля */
+				margin-left: 10px; /* Расстояние между полем и текстом */
+				border: 1px solid #abadb3; /* Рамка вокруг текстового поля */
+				padding: 2px; /* Поля вокруг текста */
+			}
+			#send .form-item {
+				margin-bottom: 5px; /* Отступ снизу */
+			}
+			#send .form-text:focus {
+				background: #32CD32; /* Цвет фона */
+				border: 1px solid #29B0D9; /* Параметры рамки */
+				box-shadow: 0 0 10px rgba(0,0,0,0.5);
+			}
+			#send .textarea {
+				width: 240px; /* Ширина поля */
+				margin-left: 10px; /* Расстояние между полем и текстом */
+				padding: 2px; /* Поля вокруг текста */
+			}
+			#send textarea:focus {
+				box-shadow: 0 0 10px rgba(0,0,0,0.5);
+			}
+			#send p {
+				margin-left: 90px; /* Сдвиг вправо */
+			}
+		</style>
+		
+	</head>
+	<body>
+		
+		<header>
+			<h1>Обратная связь</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="main.html">Главная</a></li>
+				<li><a href="mods.html">Моды</a></li>
+				<li><a href="story.html">Рассказы</a></li>
+				<li><a href="music.html">Музыка</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
+			</ul>
+		</nav>
+		<aside>
+			Форма для обратной связи
+		</aside>
+		<article>
+			<form  name="nameForm" action="send.php" method="post" id="send" onSubmit="return checkedForm(this)">
+				<div class="form-item">
+					<span class="label">Имя:</span>
+					<span class="field"><input type="text" name="name" class="form-text" required  value=""/></span>
+				</div>
+				<div class="form-item">
+					<span class="label">Фамилия / никнейм:</span>
+					<span class="field"><input type="text" name="sname" class="form-text" required  value=""/></span>
+				</div>
+				<div class="form-item">
+					<span class="label">Почта:</span>
+					<span class="field"><input type="email" name="email" class="form-text" required /></span>
+				</div>
+				<div class="form-item">
+					<span class="label">Текст сообщения: </span>
+					<span class="textarea"><TEXTAREA NAME="stext" COLS=64 ROWS=6 required></TEXTAREA></span>
+				</div>
+				
+				<p><input type="submit" value="Отправить" /></p>
+				</form>
+		</article>
+		<footer>
+			<p>Copyright 2014. All rights reserved.</p>
+		</footer>
+	</body>
+</html>
+
